@@ -2,16 +2,18 @@
 import { useState } from 'react';
 
 import { cookies } from '@/config/cookies-config';
+import { useRouter } from 'next/navigation';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const router = useRouter()
   const handleSubmit = (event: any) => {
     event.preventDefault();
     const token = 'fakeToken123';
     cookies.set('token', token);
     alert('Login successful!');
+    router.push('/');
   };
 
   return (

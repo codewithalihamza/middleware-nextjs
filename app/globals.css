@@ -57,3 +57,63 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+/* Home.css */
+
+.container-home {
+  font-family: Arial, sans-serif;
+}
+
+.header-home {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.headerContent-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-home {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logoutButton-home {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.mainContent-home {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
