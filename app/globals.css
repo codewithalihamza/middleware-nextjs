@@ -58,7 +58,6 @@
   cursor: pointer;
 }
 
-
 /* Home.css */
 
 .container-home {
@@ -96,10 +95,25 @@
 }
 
 .mainContent-home {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
