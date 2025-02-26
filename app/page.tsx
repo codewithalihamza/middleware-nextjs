@@ -1,13 +1,13 @@
-'use client';
-import { cookies } from '@/config/cookies-config';
-import { useRouter } from 'next/navigation';
+"use client";
+import { cookies } from "@/config/cookies-config";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
 
   const handleLogout = () => {
-    cookies.remove('token');
-    router.push('/login');
+    cookies.remove("token");
+    router.push("/login");
   };
 
   return (
@@ -16,7 +16,9 @@ export default function Home() {
       <header className="header-home">
         <div className="headerContent-home">
           <h1 className="title-home">MiddleWare</h1>
-          <button onClick={handleLogout} className="logoutButton-home">Logout</button>
+          <button onClick={handleLogout} className="logoutButton-home">
+            Logout
+          </button>
         </div>
       </header>
 
@@ -24,7 +26,10 @@ export default function Home() {
       <div className="mainContent-home">
         <h2>Let's Watch</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod felis id lectus sollicitudin, a tincidunt sapien blandit. Fusce laoreet, libero a tincidunt mattis, felis mi iaculis ipsum, vitae fermentum quam neque in odio.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod
+          felis id lectus sollicitudin, a tincidunt sapien blandit. Fusce
+          laoreet, libero a tincidunt mattis, felis mi iaculis ipsum, vitae
+          fermentum quam neque in odio.
         </p>
         {/* Embedded YouTube Video */}
         <div className="videoWrapper">
